@@ -1,0 +1,91 @@
+.notification {
+	padding: 15px 0px 15px 15px;
+	background-color: #fff;
+	color: #000;
+	opacity: 1;
+	transition: opacity 0.6s;
+	max-width: 400px;
+	min-width: 250px;
+	max-height: auto;
+	left: 50%;
+	display: table;
+	position: absolute;
+	border: 0.25px solid #000;
+}
+
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.closebtn:hover {
+	color: white;
+}
+
+.notification > .notification--container > .close > .closebtn,
+.notification > .notification--container > .close > .closebtn:hover {
+	color: #000;
+}
+
+.notification.info {
+	background-color: #2196F3;
+	color: #fff;
+}
+
+.notification.success {
+	background-color: #4CAF50;
+	color: #fff;
+}
+
+.notification.warning {
+	background-color: #ff9800;
+	color: #fff;
+}
+
+.notification.danger {
+	background-color: #f44336;
+	color: #fff;
+}
+
+.notification.info > .notification--container > .close > .closebtn,
+.notification.info > .notification--container > .close > .closebtn:hover,
+.notification.success > .notification--container > .close > .closebtn,
+.notification.success > .notification--container > .close > .closebtn:hover,
+.notification.warning > .notification--container > .close > .closebtn,
+.notification.warning > .notification--container > .close > .closebtn:hover,
+.notification.danger > .notification--container > .close > .closebtn,
+.notification.danger > .notification--container > .close > .closebtn:hover {
+	color: #fff;
+}
+
+.notification--container {
+	display: table-row;
+}
+
+.notification--container > div {
+	display: table-cell;
+}
+
+.icon {
+	width: 5%;
+	top: 30%;
+	position: absolute;
+}
+
+.context {
+	width: 80%;
+	padding-left: 20px;
+}
+
+.close {
+	width: 5%;
+	top: 35%;
+	right: 2.5%;
+	position: absolute;
+}
